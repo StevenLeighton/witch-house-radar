@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vl0-Zq-ZmC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="QYM-QZ-msu">
+            <objects>
+                <viewController id="KYF-A1-XHA" userLabel="Login Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2FU-81-1cG"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Ob-I7-F1B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="950-IX-Z6O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06b-UT-HLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906" y="-856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6BJ-ZU-fNp">
+            <objects>
+                <navigationController id="Vl0-Zq-ZmC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eit-19-6D3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ioA-Uz-nEk" kind="relationship" relationship="rootViewController" id="24I-w5-ecd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIy-TW-T77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1043" y="169"/>
+        </scene>
+        <!--Map View-->
+        <scene sceneID="R0D-gs-YhL">
+            <objects>
+                <viewController id="ioA-Uz-nEk" userLabel="Map View" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VUG-yH-G3U"/>
+                        <viewControllerLayoutGuide type="bottom" id="YAz-Z4-02j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DaD-Qg-qAP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-QN-Wj4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FlK-QN-Wj4" secondAttribute="trailing" id="79H-FS-iH9"/>
+                            <constraint firstItem="FlK-QN-Wj4" firstAttribute="leading" secondItem="DaD-Qg-qAP" secondAttribute="leading" id="Xcv-gI-Wso"/>
+                            <constraint firstItem="FlK-QN-Wj4" firstAttribute="leading" secondItem="DaD-Qg-qAP" secondAttribute="leadingMargin" constant="-52" id="ba4-LE-0bI"/>
+                            <constraint firstItem="FlK-QN-Wj4" firstAttribute="top" secondItem="DaD-Qg-qAP" secondAttribute="topMargin" id="dxz-PR-qgc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FlK-QN-Wj4" secondAttribute="trailing" constant="20" id="ewe-wX-0zU"/>
+                            <constraint firstItem="YAz-Z4-02j" firstAttribute="top" secondItem="FlK-QN-Wj4" secondAttribute="bottom" constant="100" id="hfq-9P-16Z"/>
+                            <constraint firstItem="YAz-Z4-02j" firstAttribute="top" secondItem="FlK-QN-Wj4" secondAttribute="bottom" id="lVh-Uh-VHv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ba4-LE-0bI"/>
+                                <exclude reference="ewe-wX-0zU"/>
+                                <exclude reference="hfq-9P-16Z"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="xeB-G6-RyJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKn-ax-nIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-389" y="169"/>
+        </scene>
+    </scenes>
+</document>
